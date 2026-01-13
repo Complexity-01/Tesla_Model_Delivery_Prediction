@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import sklearn
 
 
 # page configuration
@@ -100,4 +101,5 @@ if submit_btn:
 
 
     st.success("Estimated Deliveries Status: **{:.2f}**".format(prediction[0]))
+
 
