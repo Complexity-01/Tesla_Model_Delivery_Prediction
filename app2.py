@@ -12,11 +12,11 @@ st.title("Tesla Model Estimate Delivery Indicator")
 st.markdown("Enter Details for the prediction")
 
 # loading preprocessor
-with open(r"preprocessor2.pkl" , 'rb') as f:
+with open(r"C:\Users\HP\Downloads\Document from 𝒢𝓇𝒶𝒸𝓎🎀\preprocessor2.pkl" , 'rb') as f:
     preprocessor = pickle.load(f)
 
 # loading model
-with open(r"model2.pkl" , 'rb') as f:
+with open(r"C:\Users\HP\Downloads\Document from 𝒢𝓇𝒶𝒸𝓎🎀\model2.pkl" , 'rb') as f:
     model = pickle.load(f)
 
 
@@ -97,5 +97,6 @@ if submit_btn:
     prediction = model.predict(data_scaled)
 
     # display result
+
 
     st.success("Estimated Deliveries Status: **{:.2f}**".format(prediction[0]))
